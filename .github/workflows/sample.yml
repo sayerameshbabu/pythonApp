@@ -1,0 +1,13 @@
+name: sampleWorkFlow
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  printJob:
+    runs-on: ubuntu
+    steps:
+      - uses: action/checkout@v4
+        name: checkout repository
+      - name: execute script
+        run: echo startup.txt
