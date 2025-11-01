@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
         name: checkout repository
       - name: execute script
-        run: echo startup.txt
+        run: cat startup.txt
