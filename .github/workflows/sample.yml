@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   printJob:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4
         name: checkout repository
